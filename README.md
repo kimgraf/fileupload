@@ -6,6 +6,8 @@ This project is basically a concatination of 2 Spring Boot projects
 **_React.js and Spring Data REST - Basic_** and **_Uploading Files_**.
 React file uploading uses **_React-FileUpload_**.
 
+Styling is primarily **_Bootstrap_**
+
 ##Run the project
 To run the demo:
 1. Either clone the project or download and extract the zip file
