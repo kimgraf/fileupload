@@ -12,7 +12,7 @@ Styling is primarily **_Bootstrap_**.
 To run the demo:  
 1. Either clone the project or download and extract the zip file.  
 2. Open a terminal console and change to the directory the project is in.  
-3. Run the script ./mvnw spring-boot:run, windows use mvnw.bat.  
+3. Run the script ./mvnw spring-boot:run, windows use mvnw.bat.
 
 For more information on compiling and packaging see [**_Spring Boot_**](https://spring.io/ "Spring Boot Home Page") 
 documentation.
