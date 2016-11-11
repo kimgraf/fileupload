@@ -15,4 +15,4 @@ To run the demo:
 3. Run the script ./mvnw spring-boot:run, windows use mvnw.bat.
 
 For more information on compiling and packaging see [**_Spring Boot_**](https://spring.io/ "Spring Boot Home Page") 
-documentation 
+documentation.
