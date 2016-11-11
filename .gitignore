@@ -24,5 +24,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-.mvn/
 upload-dir/
