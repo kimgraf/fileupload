@@ -33,20 +33,6 @@ public class FileUploadController {
         this.repository = repository;
     }
 
-//    @GetMapping("/")
-//    public String listUploadedFiles(Model model) throws IOException {
-//
-//        model.addAttribute("files", storageService
-//                .loadAll()
-//                .map(path ->
-//                        MvcUriComponentsBuilder
-//                                .fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString())
-//                                .toString())
-//                .collect(Collectors.toList()));
-//
-//        return "uploadForm";
-//    }
-
     @GetMapping("/files/{filename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
@@ -63,14 +49,10 @@ public class FileUploadController {
     public UploadFile handleFileUpload(@RequestParam("file") MultipartFile file,
                                        @RequestParam("title") String title,
                                        @RequestParam("description") String description) {
-        try {
-            storageService.store(file);
-            UploadFile f = new UploadFile(file.getOriginalFilename(), title, new Date(), description);
-            repository.save(f);
-            return f;
-        }catch (Exception e) {
-            throw e;
-        }
+        storageService.store(file);
+        UploadFile f = new UploadFile(file.getOriginalFilename(), title, new Date(), description);
+        repository.save(f);
+        return f;
     }
 
     @ExceptionHandler(StorageFileNotFoundException.class)

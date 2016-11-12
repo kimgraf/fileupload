@@ -125,7 +125,7 @@ class FileInputForm extends React.Component {
     return (
         <div>
         <FileUpload options={this.options} parent={this}>
-            <div className="col-md-1"><label className="label label-danger">Title: </label></div>
+            <div className="col-md-1"><label className="label label-danger"><strong>Title: </strong></label></div>
             <div className="col-md-6"><input id="title" type="text"/></div>
             <div className="div-label col-md-1"><label className="label label-danger">Description: </label></div>
             <div className="col-md-6"><input id="description" type="text"/></div>
@@ -150,10 +150,10 @@ const FileList = (props) => {
 		return (
 		    <div>
 			<div className="row">
-                <div className={colsize}>Title</div>
-                <div className={colsize}>Description</div>
-                <div className={colsize}>Date Created</div>
-                <div className={colsize}>Download</div>
+                <div className={colsize}><strong>Title</strong></div>
+                <div className={colsize}><strong>Description</strong></div>
+                <div className={colsize}><strong>Date Created</strong></div>
+                <div className={colsize}><strong>Download</strong></div>
 			</div>
 			{files}
 			</div>

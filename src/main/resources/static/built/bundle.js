@@ -221,7 +221,11 @@
 	            React.createElement(
 	              'label',
 	              { className: 'label label-danger' },
-	              'Title: '
+	              React.createElement(
+	                'strong',
+	                null,
+	                'Title: '
+	              )
 	            )
 	          ),
 	          React.createElement(
@@ -291,22 +295,38 @@
 	      React.createElement(
 	        'div',
 	        { className: colsize },
-	        'Title'
+	        React.createElement(
+	          'strong',
+	          null,
+	          'Title'
+	        )
 	      ),
 	      React.createElement(
 	        'div',
 	        { className: colsize },
-	        'Description'
+	        React.createElement(
+	          'strong',
+	          null,
+	          'Description'
+	        )
 	      ),
 	      React.createElement(
 	        'div',
 	        { className: colsize },
-	        'Date Created'
+	        React.createElement(
+	          'strong',
+	          null,
+	          'Date Created'
+	        )
 	      ),
 	      React.createElement(
 	        'div',
 	        { className: colsize },
-	        'Download'
+	        React.createElement(
+	          'strong',
+	          null,
+	          'Download'
+	        )
 	      )
 	    ),
 	    files
