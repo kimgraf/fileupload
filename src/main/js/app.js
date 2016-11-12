@@ -127,9 +127,9 @@ class FileInputForm extends React.Component {
         <FileUpload options={this.options} parent={this}>
             <div className="col-md-1"><label className="label label-danger"><strong>Title: </strong></label></div>
             <div className="col-md-6"><input id="title" type="text"/></div>
-            <div className="div-label col-md-1"><label className="label label-danger">Description: </label></div>
+            <div className="div-label col-md-1"><label className="label label-danger"><strong>Description: </strong></label></div>
             <div className="col-md-6"><input id="description" type="text"/></div>
-            <div className="div-label col-md-1"><label className="label label-danger">File Name: </label></div>
+            <div className="div-label col-md-1"><label className="label label-danger"><strong>File Name: </strong></label></div>
             <div className="col-md-6"><input disabled id="filename" type="text" value={this.state.filename}/></div>
                 <button className="div-btn btn btn-sm btn-default" ref="chooseBtn">Choose File</button>
                 {uploadbutton}

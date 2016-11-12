@@ -239,7 +239,11 @@
 	            React.createElement(
 	              'label',
 	              { className: 'label label-danger' },
-	              'Description: '
+	              React.createElement(
+	                'strong',
+	                null,
+	                'Description: '
+	              )
 	            )
 	          ),
 	          React.createElement(
@@ -253,7 +257,11 @@
 	            React.createElement(
 	              'label',
 	              { className: 'label label-danger' },
-	              'File Name: '
+	              React.createElement(
+	                'strong',
+	                null,
+	                'File Name: '
+	              )
 	            )
 	          ),
 	          React.createElement(
